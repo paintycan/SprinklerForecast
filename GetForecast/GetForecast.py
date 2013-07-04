@@ -8,7 +8,7 @@ import math
 #import SprinklerOn
 import sys
 import getopt
-import RPi.GPIO as GPIO
+#import RPi.GPIO as GPIO
 import atexit
 
 # GPIO PIN DEFINES
@@ -49,7 +49,6 @@ def getArgs(stationNum):
 
 def SprinklerOn(stationNum):
     print("Starting Station ", stationNum)
-    print(values)
     getArgs(stationNum)
     GPIO.cleanup()
     # setup GPIO pins to interface with shift register
@@ -144,136 +143,138 @@ def BackupCrontab():
     os.system('crontab -u pi -l > /home/pi/crontab.old.txt')
  
 def CreateSchedule():
-    try:
+    #try:
  
-        #Open xml file
-        treeConfig = etree.parse("config.xml")
-        elemRoot = treeConfig.getroot()
-        #get sunrise hour and minute
-        sunriseHour = elemRoot.find('weatherInfo/sunriseHour').text
-        sunriseMinute = elemRoot.find('weatherInfo/sunriseMinute').text
-        #get forecast high and rain
-        forecastHigh = elemRoot.find('weatherInfo/highTemp').text
-        forecastRain = elemRoot.find('weatherInfo/precip').text
-        #get other config parameters
-        sunriseOffset = elemRoot.find('starts/sunriseOffset').text
-        threshRain = elemRoot.find('thresholds/rain').text
-        threshCoolHalfTemp = elemRoot.find('thresholds/coolHalfTemp').text
-        threshCoolThirdTemp = elemRoot.find('thresholds/coolThirdTemp').text
-        threshCoolOffTemp = elemRoot.find('thresholds/coolOffTemp').text
-        threshHotEnabled = elemRoot.find('thresholds/hotEnabled').text
-        threshHotTemp = elemRoot.find('thresholds/hotTemp').text
-        threshHotDuration = elemRoot.find('thresholds/hotExtraDuration').text
-        threshHotStartHour = elemRoot.find('thresholds/hotExtraTimeHour').text
-        threshHotStartMinute = elemRoot.find('thresholds/hotExtraTimeMinute').text
+    #Open xml file
+    treeConfig = etree.parse("config.xml")
+    elemRoot = treeConfig.getroot()
+    #get sunrise hour and minute
+    sunriseHour = elemRoot.find('weatherInfo/sunriseHour').text
+    sunriseMinute = elemRoot.find('weatherInfo/sunriseMinute').text
+    #get forecast high and rain
+    forecastHigh = elemRoot.find('weatherInfo/highTemp').text
+    forecastRain = elemRoot.find('weatherInfo/precip').text
+    #get other config parameters
+    sunriseEnabled = elemRoot.find('starts/sunrise/enabled').text
+    sunriseOffset = elemRoot.find('starts/sunrise/hourOffset').text
+    timeStartEnabled = elemRoot.find('starts/time/enabled').text
+    timeStartHour = elemRoot.find('starts/time/hour').text
+    timeStartMinute = elemRoot.find('starts/time/minute').text
+
+    threshRain = elemRoot.find('thresholds/rain').text
+    threshCoolHalfTemp = elemRoot.find('thresholds/coolHalfTemp').text
+    threshCoolThirdTemp = elemRoot.find('thresholds/coolThirdTemp').text
+    threshCoolOffTemp = elemRoot.find('thresholds/coolOffTemp').text
+    threshHotEnabled = elemRoot.find('thresholds/hotEnabled').text
+    threshHotTemp = elemRoot.find('thresholds/hotTemp').text
+    threshHotDuration = elemRoot.find('thresholds/hotExtraDuration').text
+    threshHotStartHour = elemRoot.find('thresholds/hotExtraTimeHour').text
+    threshHotStartMinute = elemRoot.find('thresholds/hotExtraTimeMinute').text
  
+    if timeStartEnabled == str(1):
+        startHour = int(timeStartHour)
+        startMinute = timeStartMinute
+    else:
         startHour = int(sunriseHour) + int(sunriseOffset)
         startMinute = sunriseMinute
  
-        #skip watering if rain or too cold
-        if (float(forecastRain) < float(threshRain) and int(forecastHigh) > int(threshCoolOffTemp)):
-            print('regular program')
-            root = etree.Element("root")
-            #loop through each station setting in config.xml
-            elemStations = elemRoot.find('stations')
-            for station in elemStations:
-                #get station config numbers
-                number = station.find('number')
-                duration = station.find('duration').text
+    #skip watering if rain or too cold
+    if (float(forecastRain) < float(threshRain) and int(forecastHigh) > int(threshCoolOffTemp)):
+        print('regular program')
+        root = etree.Element("root")
+        #loop through each station setting in config.xml
+        elemStations = elemRoot.find('stations')
+        for station in elemStations:
+            #get station config numbers
+            number = station.find('number')
+            duration = station.find('duration').text
 
-                #Set startTime
-                startTime = midnight + datetime.timedelta(hours=int(startHour), minutes=int(startMinute))
-
-                #Write to XML
-                schedule = etree.SubElement(root, "schedule")
-                schedule.set('type', 'regular')
-                station = etree.SubElement(schedule, "station")
-                station.text = number.text
-                rundate = etree.SubElement(schedule, "datetime")
-                rundate.text = str(startTime)
-
-                #increment startMinute for next station
-                startMinute = int(startMinute) + int(duration)
-                #roll over startMinute and startHour when necessary
-                if int(startMinute) > int(59):
-                    startMinute = int(startMinute) - int(60)
-                    startHour = int(startHour) + int(1)
-
-            #Write stop command to XML
             #Set startTime
             startTime = midnight + datetime.timedelta(hours=int(startHour), minutes=int(startMinute))
 
+            #Write to XML
             schedule = etree.SubElement(root, "schedule")
             schedule.set('type', 'regular')
             station = etree.SubElement(schedule, "station")
-            station.text = '0'
+            station.text = number.text
             rundate = etree.SubElement(schedule, "datetime")
             rundate.text = str(startTime)
 
-            tree = etree.ElementTree(root)
-            tree.write("schedule.xml")
+            #increment startMinute for next station
+            startMinute = int(startMinute) + int(duration)
+            #roll over startMinute and startHour when necessary
+            if int(startMinute) > int(59):
+                startMinute = int(startMinute) - int(60)
+                startHour = int(startHour) + int(1)
 
-        #if above hot threshold, add extra entry
-        if (int(forecastHigh) >= int(threshHotTemp) and int(threshHotEnabled) == 1):
-            print("Hot Program")
-            startHour = threshHotStartHour
-            startMinute = threshHotStartMinute
+        #Write stop command to XML
+        #Set startTime
+        startTime = midnight + datetime.timedelta(hours=int(startHour), minutes=int(startMinute))
+
+        schedule = etree.SubElement(root, "schedule")
+        schedule.set('type', 'regular')
+        station = etree.SubElement(schedule, "station")
+        station.text = '0'
+        rundate = etree.SubElement(schedule, "datetime")
+        rundate.text = str(startTime)
+
+        tree = etree.ElementTree(root)
+        tree.write("schedule.xml")
+
+    #if above hot threshold, add extra entry
+    if (int(forecastHigh) >= int(threshHotTemp) and int(threshHotEnabled) == 1):
+        print("Hot Program")
+        startHour = threshHotStartHour
+        startMinute = threshHotStartMinute
  
-            treeSched = etree.parse('schedule.xml')
-            rootSched = treeSched.getroot()
+        treeSched = etree.parse('schedule.xml')
+        rootSched = treeSched.getroot()
 
 
-            #loop through each station setting in config.xml
-            elemStations = elemRoot.find('stations')
-            for station in elemStations:
-                #get configured station numbers
-                number = station.find('number')
+        #loop through each station setting in config.xml
+        elemStations = elemRoot.find('stations')
+        for station in elemStations:
+            #get configured station numbers
+            number = station.find('number')
  
-                #Set startTime
-                startTime = midnight + datetime.timedelta(hours=int(startHour), minutes=int(startMinute))
-
-                schedule = etree.Element("schedule")
-                schedule.set('type', 'hot')
-                rootSched.append(schedule)
-                elemStation = etree.Element('station')
-                elemStation.text = number.text
-                schedule.append(elemStation)
-                elemDatetime = etree.Element('datetime')
-                elemDatetime.text = str(startTime)
-                schedule.append(elemDatetime)
-
-                treeSched.write("schedule.xml")
-
-                #increment startMinute for next station
-                startMinute = int(startMinute) + int(threshHotDuration)
-                #roll over startMinute and startHour when necessary
-                if int(startMinute) > int(59):
-                    startMinute = int(startMinute) - int(60)
-                    startHour = int(startHour) + int(1)
-
             #Set startTime
             startTime = midnight + datetime.timedelta(hours=int(startHour), minutes=int(startMinute))
+
             schedule = etree.Element("schedule")
             schedule.set('type', 'hot')
             rootSched.append(schedule)
             elemStation = etree.Element('station')
-            elemStation.text = '0'
+            elemStation.text = number.text
             schedule.append(elemStation)
             elemDatetime = etree.Element('datetime')
             elemDatetime.text = str(startTime)
             schedule.append(elemDatetime)
 
             treeSched.write("schedule.xml")
+
+            #increment startMinute for next station
+            startMinute = int(startMinute) + int(threshHotDuration)
+            #roll over startMinute and startHour when necessary
+            if int(startMinute) > int(59):
+                startMinute = int(startMinute) - int(60)
+                startHour = int(startHour) + int(1)
+
+        #Set startTime
+        startTime = midnight + datetime.timedelta(hours=int(startHour), minutes=int(startMinute))
+        schedule = etree.Element("schedule")
+        schedule.set('type', 'hot')
+        rootSched.append(schedule)
+        elemStation = etree.Element('station')
+        elemStation.text = '0'
+        schedule.append(elemStation)
+        elemDatetime = etree.Element('datetime')
+        elemDatetime.text = str(startTime)
+        schedule.append(elemDatetime)
+
+        treeSched.write("schedule.xml")
         
-    except:
-        print("Unexpected error:")
-
-
-#def SprinklerOn(stationNum):
-#    try:
-#        print("Starting Station ", stationNum)
-#    except:
-#        print("Unexpected error:", sys.exc_info()[0])
+    #except:
+       # print("Unexpected error:")
 
 def RunSchedule():
     now = datetime.datetime.now()

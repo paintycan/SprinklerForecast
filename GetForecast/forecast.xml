@@ -13,72 +13,72 @@
 		<period>0</period>
 		<icon>partlycloudy</icon>
 		<icon_url>http://icons-ak.wxug.com/i/c/k/partlycloudy.gif</icon_url>
-		<title>Tuesday</title>
-		<fcttext><![CDATA[Partly cloudy with  thunderstorms in the afternoon. High of 111F. Winds less than 5 mph. Chance of rain 20%.]]></fcttext>
-		<fcttext_metric><![CDATA[Partly cloudy with  thunderstorms in the afternoon. High of 44C. Winds less than 5 km/h.]]></fcttext_metric>
+		<title>Wednesday</title>
+		<fcttext><![CDATA[Partly cloudy with  thunderstorms and rain showers in the afternoon. High of 104F. Winds from the NW at 5 to 15 mph. Chance of rain 20%.]]></fcttext>
+		<fcttext_metric><![CDATA[Partly cloudy with  thunderstorms and rain showers in the afternoon. High of 40C. Breezy. Winds from the NW at 10 to 20 km/h.]]></fcttext_metric>
 		<pop>20</pop>
 		</forecastday>
 		<forecastday>
 		<period>1</period>
 		<icon>partlycloudy</icon>
 		<icon_url>http://icons-ak.wxug.com/i/c/k/partlycloudy.gif</icon_url>
-		<title>Tuesday Night</title>
-		<fcttext><![CDATA[Partly cloudy with a chance of a thunderstorm and a chance of rain. Low of 70F. Winds from the WNW at 5 to 10 mph.]]></fcttext>
-		<fcttext_metric><![CDATA[Partly cloudy with a chance of a thunderstorm and a chance of rain. Low of 21C. Winds from the WNW at 5 to 15 km/h.]]></fcttext_metric>
-		<pop>20</pop>
+		<title>Wednesday Night</title>
+		<fcttext><![CDATA[Partly cloudy. Low of 68F. Winds from the NW at 5 to 15 mph.]]></fcttext>
+		<fcttext_metric><![CDATA[Partly cloudy. Low of 20C. Breezy. Winds from the NW at 10 to 25 km/h.]]></fcttext_metric>
+		<pop>10</pop>
 		</forecastday>
 		<forecastday>
 		<period>2</period>
 		<icon>partlycloudy</icon>
 		<icon_url>http://icons-ak.wxug.com/i/c/k/partlycloudy.gif</icon_url>
-		<title>Wednesday</title>
-		<fcttext><![CDATA[Partly cloudy with  a chance of a thunderstorm in the afternoon. High of 104F. Winds from the WNW at 5 to 10 mph. Chance of rain 20%.]]></fcttext>
-		<fcttext_metric><![CDATA[Partly cloudy with  a chance of a thunderstorm in the afternoon. High of 40C. Winds from the WNW at 10 to 15 km/h.]]></fcttext_metric>
-		<pop>20</pop>
+		<title>Thursday</title>
+		<fcttext><![CDATA[Partly cloudy. High of 95F. Winds from the NW at 5 to 10 mph.]]></fcttext>
+		<fcttext_metric><![CDATA[Partly cloudy. High of 35C. Winds from the NW at 10 to 15 km/h.]]></fcttext_metric>
+		<pop>10</pop>
 		</forecastday>
 		<forecastday>
 		<period>3</period>
 		<icon>partlycloudy</icon>
 		<icon_url>http://icons-ak.wxug.com/i/c/k/partlycloudy.gif</icon_url>
-		<title>Wednesday Night</title>
-		<fcttext><![CDATA[Partly cloudy with a chance of a thunderstorm and a chance of rain. Low of 68F. Winds from the WNW at 5 to 15 mph. Chance of rain 20%.]]></fcttext>
-		<fcttext_metric><![CDATA[Partly cloudy with a chance of a thunderstorm and a chance of rain. Low of 20C. Breezy. Winds from the WNW at 5 to 25 km/h.]]></fcttext_metric>
-		<pop>20</pop>
+		<title>Thursday Night</title>
+		<fcttext><![CDATA[Clear. Low of 66F. Winds from the WNW at 5 to 15 mph.]]></fcttext>
+		<fcttext_metric><![CDATA[Clear. Low of 19C. Winds from the WNW at 5 to 20 km/h.]]></fcttext_metric>
+		<pop>10</pop>
 		</forecastday>
 		<forecastday>
 		<period>4</period>
-		<icon>partlycloudy</icon>
-		<icon_url>http://icons-ak.wxug.com/i/c/k/partlycloudy.gif</icon_url>
-		<title>Thursday</title>
-		<fcttext><![CDATA[Partly cloudy with  a chance of a thunderstorm and a chance of rain in the afternoon. High of 99F. Winds from the WSW at 5 to 10 mph shifting to the NW in the afternoon. Chance of rain 20%.]]></fcttext>
-		<fcttext_metric><![CDATA[Partly cloudy with  a chance of a thunderstorm and a chance of rain in the afternoon. High of 37C. Winds from the WSW at 5 to 15 km/h shifting to the NW in the afternoon.]]></fcttext_metric>
-		<pop>20</pop>
+		<icon>clear</icon>
+		<icon_url>http://icons-ak.wxug.com/i/c/k/clear.gif</icon_url>
+		<title>Friday</title>
+		<fcttext><![CDATA[Clear. High of 91F. Winds from the WNW at 5 to 10 mph.]]></fcttext>
+		<fcttext_metric><![CDATA[Clear. High of 33C. Winds from the WNW at 5 to 20 km/h.]]></fcttext_metric>
+		<pop>10</pop>
 		</forecastday>
 		<forecastday>
 		<period>5</period>
 		<icon>partlycloudy</icon>
 		<icon_url>http://icons-ak.wxug.com/i/c/k/partlycloudy.gif</icon_url>
-		<title>Thursday Night</title>
-		<fcttext><![CDATA[Partly cloudy. Low of 61F. Winds from the NW at 5 to 10 mph.]]></fcttext>
-		<fcttext_metric><![CDATA[Partly cloudy. Low of 16C. Winds from the NW at 10 to 15 km/h.]]></fcttext_metric>
+		<title>Friday Night</title>
+		<fcttext><![CDATA[Partly cloudy in the evening, then clear. Low of 55F. Winds from the NNW at 5 to 15 mph.]]></fcttext>
+		<fcttext_metric><![CDATA[Partly cloudy in the evening, then clear. Low of 13C. Breezy. Winds from the NNW at 10 to 20 km/h.]]></fcttext_metric>
 		<pop>0</pop>
 		</forecastday>
 		<forecastday>
 		<period>6</period>
-		<icon>partlycloudy</icon>
-		<icon_url>http://icons-ak.wxug.com/i/c/k/partlycloudy.gif</icon_url>
-		<title>Friday</title>
-		<fcttext><![CDATA[Partly cloudy. High of 90F. Winds from the NW at 5 to 10 mph.]]></fcttext>
-		<fcttext_metric><![CDATA[Partly cloudy. High of 32C. Breezy. Winds from the NW at 10 to 20 km/h.]]></fcttext_metric>
+		<icon>clear</icon>
+		<icon_url>http://icons-ak.wxug.com/i/c/k/clear.gif</icon_url>
+		<title>Saturday</title>
+		<fcttext><![CDATA[Clear. High of 91F. Winds from the NW at 5 to 10 mph.]]></fcttext>
+		<fcttext_metric><![CDATA[Clear. High of 33C. Winds from the NW at 10 to 15 km/h.]]></fcttext_metric>
 		<pop>0</pop>
 		</forecastday>
 		<forecastday>
 		<period>7</period>
 		<icon>clear</icon>
 		<icon_url>http://icons-ak.wxug.com/i/c/k/clear.gif</icon_url>
-		<title>Friday Night</title>
-		<fcttext><![CDATA[Overcast in the evening, then clear. Low of 61F. Winds from the NNW at 5 to 15 mph.]]></fcttext>
-		<fcttext_metric><![CDATA[Overcast in the evening, then clear. Low of 16C. Breezy. Winds from the NNW at 10 to 20 km/h.]]></fcttext_metric>
+		<title>Saturday Night</title>
+		<fcttext><![CDATA[Clear. Low of 61F. Winds from the North at 5 to 10 mph shifting to the East after midnight.]]></fcttext>
+		<fcttext_metric><![CDATA[Clear. Low of 16C. Winds from the North at 5 to 15 km/h shifting to the East after midnight.]]></fcttext_metric>
 		<pop>0</pop>
 		</forecastday>
 		</forecastdays>
@@ -87,82 +87,6 @@
 		<forecastdays>
 		<forecastday>
 		<date>
-  <epoch>1372820400</epoch>
-  <pretty_short>9:00 PM MDT</pretty_short>
-  <pretty>9:00 PM MDT on July 02, 2013</pretty>
-  <day>2</day>
-  <month>7</month>
-  <year>2013</year>
-  <yday>182</yday>
-  <hour>21</hour>
-  <min>00</min>
-  <sec>0</sec>
-  <isdst>1</isdst>
-  <monthname>July</monthname>
-  <weekday_short>Tue</weekday_short>
-  <weekday>Tuesday</weekday>
-  <ampm>PM</ampm>
-  <tz_short>MDT</tz_short>
-  <tz_long>America/Denver</tz_long>
-</date>
-					<period>1</period>
-					<high>
-						<fahrenheit>111</fahrenheit>
-						<celsius>44</celsius>
-					</high>
-					<low>
-						<fahrenheit>70</fahrenheit>
-						<celsius>21</celsius>
-					</low>
-					<conditions>Thunderstorm</conditions>
-					
-					<icon>partlycloudy</icon>
-					<icon_url>http://icons-ak.wxug.com/i/c/k/partlycloudy.gif</icon_url>
-					<skyicon>partlycloudy</skyicon>
-					<pop>20</pop>
-					<qpf_allday>
-						<in>0.02</in>
-						<mm>0.5</mm>
-					</qpf_allday>
-					<qpf_day>
-						<in>0.00</in>
-						<mm>0.0</mm>
-					</qpf_day>
-					<qpf_night>
-						<in>0.00</in>
-						<mm>0.0</mm>
-					</qpf_night>
-					<snow_allday>
-						<in>0</in>
-						<cm>0</cm>
-					</snow_allday>
-					<snow_day>
-						<in>0</in>
-						<cm>0</cm>
-					</snow_day>
-					<snow_night>
-						<in>0</in>
-						<cm>0</cm>
-					</snow_night>
-					<maxwind>
-						<mph>7</mph>
-						<kph>11</kph>
-						<dir>WNW</dir>
-						<degrees>302</degrees>
-					</maxwind>
-					<avewind>
-						<mph>6</mph>
-						<kph>10</kph>
-						<dir>West</dir>
-						<degrees>277</degrees>
-					</avewind>
-					<avehumidity>20</avehumidity>
-					<maxhumidity>52</maxhumidity>
-					<minhumidity>18</minhumidity>
-				</forecastday>
-				
-				<forecastday>
-					<date>
   <epoch>1372906800</epoch>
   <pretty_short>9:00 PM MDT</pretty_short>
   <pretty>9:00 PM MDT on July 03, 2013</pretty>
@@ -181,7 +105,7 @@
   <tz_short>MDT</tz_short>
   <tz_long>America/Denver</tz_long>
 </date>
-					<period>2</period>
+					<period>1</period>
 					<high>
 						<fahrenheit>104</fahrenheit>
 						<celsius>40</celsius>
@@ -190,7 +114,7 @@
 						<fahrenheit>68</fahrenheit>
 						<celsius>20</celsius>
 					</low>
-					<conditions>Chance of a Thunderstorm</conditions>
+					<conditions>Thunderstorm</conditions>
 					
 					<icon>partlycloudy</icon>
 					<icon_url>http://icons-ak.wxug.com/i/c/k/partlycloudy.gif</icon_url>
@@ -221,20 +145,20 @@
 						<cm>0</cm>
 					</snow_night>
 					<maxwind>
-						<mph>14</mph>
-						<kph>22</kph>
-						<dir>NW</dir>
-						<degrees>320</degrees>
+						<mph>12</mph>
+						<kph>19</kph>
+						<dir>WNW</dir>
+						<degrees>300</degrees>
 					</maxwind>
 					<avewind>
-						<mph>11</mph>
-						<kph>18</kph>
+						<mph>8</mph>
+						<kph>13</kph>
 						<dir>NW</dir>
-						<degrees>312</degrees>
+						<degrees>315</degrees>
 					</avewind>
-					<avehumidity>21</avehumidity>
-					<maxhumidity>69</maxhumidity>
-					<minhumidity>18</minhumidity>
+					<avehumidity>22</avehumidity>
+					<maxhumidity>52</maxhumidity>
+					<minhumidity>19</minhumidity>
 				</forecastday>
 				
 				<forecastday>
@@ -257,21 +181,21 @@
   <tz_short>MDT</tz_short>
   <tz_long>America/Denver</tz_long>
 </date>
-					<period>3</period>
+					<period>2</period>
 					<high>
-						<fahrenheit>99</fahrenheit>
-						<celsius>37</celsius>
+						<fahrenheit>95</fahrenheit>
+						<celsius>35</celsius>
 					</high>
 					<low>
-						<fahrenheit>61</fahrenheit>
-						<celsius>16</celsius>
+						<fahrenheit>66</fahrenheit>
+						<celsius>19</celsius>
 					</low>
-					<conditions>Chance of a Thunderstorm</conditions>
+					<conditions>Partly Cloudy</conditions>
 					
 					<icon>partlycloudy</icon>
 					<icon_url>http://icons-ak.wxug.com/i/c/k/partlycloudy.gif</icon_url>
 					<skyicon>partlycloudy</skyicon>
-					<pop>20</pop>
+					<pop>10</pop>
 					<qpf_allday>
 						<in>0.00</in>
 						<mm>0.0</mm>
@@ -297,20 +221,20 @@
 						<cm>0</cm>
 					</snow_night>
 					<maxwind>
-						<mph>9</mph>
-						<kph>14</kph>
+						<mph>12</mph>
+						<kph>19</kph>
 						<dir>NW</dir>
 						<degrees>320</degrees>
 					</maxwind>
 					<avewind>
-						<mph>8</mph>
-						<kph>13</kph>
+						<mph>9</mph>
+						<kph>14</kph>
 						<dir>NW</dir>
 						<degrees>315</degrees>
 					</avewind>
-					<avehumidity>21</avehumidity>
-					<maxhumidity>59</maxhumidity>
-					<minhumidity>18</minhumidity>
+					<avehumidity>23</avehumidity>
+					<maxhumidity>55</maxhumidity>
+					<minhumidity>21</minhumidity>
 				</forecastday>
 				
 				<forecastday>
@@ -333,20 +257,96 @@
   <tz_short>MDT</tz_short>
   <tz_long>America/Denver</tz_long>
 </date>
+					<period>3</period>
+					<high>
+						<fahrenheit>91</fahrenheit>
+						<celsius>33</celsius>
+					</high>
+					<low>
+						<fahrenheit>55</fahrenheit>
+						<celsius>13</celsius>
+					</low>
+					<conditions>Clear</conditions>
+					
+					<icon>clear</icon>
+					<icon_url>http://icons-ak.wxug.com/i/c/k/clear.gif</icon_url>
+					<skyicon>mostlysunny</skyicon>
+					<pop>10</pop>
+					<qpf_allday>
+						<in>0.00</in>
+						<mm>0.0</mm>
+					</qpf_allday>
+					<qpf_day>
+						<in>0.00</in>
+						<mm>0.0</mm>
+					</qpf_day>
+					<qpf_night>
+						<in>0.00</in>
+						<mm>0.0</mm>
+					</qpf_night>
+					<snow_allday>
+						<in>0</in>
+						<cm>0</cm>
+					</snow_allday>
+					<snow_day>
+						<in>0</in>
+						<cm>0</cm>
+					</snow_day>
+					<snow_night>
+						<in>0</in>
+						<cm>0</cm>
+					</snow_night>
+					<maxwind>
+						<mph>12</mph>
+						<kph>19</kph>
+						<dir>NW</dir>
+						<degrees>320</degrees>
+					</maxwind>
+					<avewind>
+						<mph>10</mph>
+						<kph>16</kph>
+						<dir>NW</dir>
+						<degrees>313</degrees>
+					</avewind>
+					<avehumidity>22</avehumidity>
+					<maxhumidity>51</maxhumidity>
+					<minhumidity>20</minhumidity>
+				</forecastday>
+				
+				<forecastday>
+					<date>
+  <epoch>1373166000</epoch>
+  <pretty_short>9:00 PM MDT</pretty_short>
+  <pretty>9:00 PM MDT on July 06, 2013</pretty>
+  <day>6</day>
+  <month>7</month>
+  <year>2013</year>
+  <yday>186</yday>
+  <hour>21</hour>
+  <min>00</min>
+  <sec>0</sec>
+  <isdst>1</isdst>
+  <monthname>July</monthname>
+  <weekday_short>Sat</weekday_short>
+  <weekday>Saturday</weekday>
+  <ampm>PM</ampm>
+  <tz_short>MDT</tz_short>
+  <tz_long>America/Denver</tz_long>
+</date>
 					<period>4</period>
 					<high>
-						<fahrenheit>90</fahrenheit>
-						<celsius>32</celsius>
+						<fahrenheit>91</fahrenheit>
+						<celsius>33</celsius>
 					</high>
 					<low>
 						<fahrenheit>61</fahrenheit>
 						<celsius>16</celsius>
 					</low>
-					<conditions>Partly Cloudy</conditions>
+					<conditions>Clear</conditions>
 					
-					<icon>partlycloudy</icon>
-					<icon_url>http://icons-ak.wxug.com/i/c/k/partlycloudy.gif</icon_url>
-					<skyicon>partlycloudy</skyicon>
+					<icon>clear</icon>
+					<icon_url>http://icons-ak.wxug.com/i/c/k/clear.gif</icon_url>
+					<skyicon>sunny</skyicon>
 					<pop>0</pop>
 					<qpf_allday>
 						<in>0.00</in>
@@ -373,20 +373,20 @@
 						<cm>0</cm>
 					</snow_night>
 					<maxwind>
-						<mph>10</mph>
-						<kph>16</kph>
-						<dir>WNW</dir>
-						<degrees>298</degrees>
-					</maxwind>
-					<avewind>
 						<mph>9</mph>
 						<kph>14</kph>
 						<dir>NW</dir>
-						<degrees>307</degrees>
+						<degrees>319</degrees>
+					</maxwind>
+					<avewind>
+						<mph>7</mph>
+						<kph>11</kph>
+						<dir>NW</dir>
+						<degrees>311</degrees>
 					</avewind>
-					<avehumidity>13</avehumidity>
-					<maxhumidity>40</maxhumidity>
-					<minhumidity>11</minhumidity>
+					<avehumidity>20</avehumidity>
+					<maxhumidity>39</maxhumidity>
+					<minhumidity>15</minhumidity>
 				</forecastday>
 				
 			</forecastdays>

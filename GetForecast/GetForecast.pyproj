@@ -23,6 +23,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="GetForecast.py" />
+    <Compile Include="RPi.py" />
     <Compile Include="SprinklerOn.py" />
     <Compile Include="Test.py" />
   </ItemGroup>

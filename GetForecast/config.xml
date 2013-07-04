@@ -1,10 +1,10 @@
 <root>
-  <date>2013-07-02 17:53:09.809000</date>
+  <date>2013-07-03 19:36:03.061000</date>
   <weatherInfo>
-    <highTemp>111</highTemp>
-    <precip>0.02</precip>
+    <highTemp>104</highTemp>
+    <precip>0.00</precip>
     <sunriseHour>6</sunriseHour>
-    <sunriseMinute>08</sunriseMinute>
+    <sunriseMinute>09</sunriseMinute>
   </weatherInfo>
   <wunderground>
     <API>4a9d2b5150c1d76c</API>
@@ -67,9 +67,14 @@
     <hotExtraTimeMinute>48</hotExtraTimeMinute>
   </thresholds>
   <starts>
-    <sunriseEnabled>1</sunriseEnabled>
-    <sunriseOffset>-2</sunriseOffset>
-    <startHour />
-    <startMinute />
+    <sunrise>
+      <enabled>0</enabled>
+      <hourOffset>-2</hourOffset>
+    </sunrise>
+    <time>
+      <enabled>0</enabled>
+      <hour>19</hour>
+      <minute>35</minute>
+    </time>
   </starts>
 </root>
