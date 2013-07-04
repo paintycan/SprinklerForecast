@@ -8,7 +8,7 @@ import math
 #import SprinklerOn
 import sys
 import getopt
-#import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 import atexit
 
 # GPIO PIN DEFINES
