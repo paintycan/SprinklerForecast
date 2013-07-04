@@ -1,0 +1,75 @@
+<root>
+  <date>2013-07-02 17:53:09.809000</date>
+  <weatherInfo>
+    <highTemp>111</highTemp>
+    <precip>0.02</precip>
+    <sunriseHour>6</sunriseHour>
+    <sunriseMinute>08</sunriseMinute>
+  </weatherInfo>
+  <wunderground>
+    <API>4a9d2b5150c1d76c</API>
+    <state>ID</state>
+    <zip>83709</zip>
+  </wunderground>
+  <stations>
+    <station>
+      <number>1</number>
+      <name>Front Yard North</name>
+      <duration>25</duration>
+      <lastRun />
+    </station>
+    <station>
+      <number>2</number>
+      <name>Front Yard South</name>
+      <duration>25</duration>
+      <lastRun />
+    </station>
+    <station>
+      <number>3</number>
+      <name>West Side</name>
+      <duration>25</duration>
+      <lastRun />
+    </station>
+    <station>
+      <number>4</number>
+      <name>Back Yard South</name>
+      <duration>25</duration>
+      <lastRun />
+    </station>
+    <station>
+      <number>5</number>
+      <name>Back Yard Middle</name>
+      <duration>25</duration>
+      <lastRun />
+    </station>
+    <station>
+      <number>6</number>
+      <name>Back Yard North</name>
+      <duration>25</duration>
+      <lastRun />
+    </station>
+    <station>
+      <number>7</number>
+      <name>Back Yard East</name>
+      <duration>25</duration>
+      <lastRun />
+    </station>
+  </stations>
+  <thresholds>
+    <rain>0.20</rain>
+    <coolHalfTemp>80</coolHalfTemp>
+    <coolThirdTemp>70</coolThirdTemp>
+    <coolOffTemp>50</coolOffTemp>
+    <hotEnabled>1</hotEnabled>
+    <hotTemp>90</hotTemp>
+    <hotExtraDuration>2</hotExtraDuration>
+    <hotExtraTimeHour>17</hotExtraTimeHour>
+    <hotExtraTimeMinute>48</hotExtraTimeMinute>
+  </thresholds>
+  <starts>
+    <sunriseEnabled>1</sunriseEnabled>
+    <sunriseOffset>-2</sunriseOffset>
+    <startHour />
+    <startMinute />
+  </starts>
+</root>
